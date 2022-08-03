@@ -7,7 +7,7 @@ import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 
-class ProductPresenter(var productView: ProductView) : ViewModel() {
+class ProductPresenter(var productView: ProductView){
     fun getProduct() {
         val conn = RetrofitFactory.call
         val call = conn.getProducts()
